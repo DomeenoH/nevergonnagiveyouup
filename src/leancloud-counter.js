@@ -11,9 +11,9 @@ function VisitorCounter() {
      * 当前配置 
      **/
     this.config = {
-        appId: '',       //应用ID, 必输
-        appKey: '',      //应用Key, 必输
-        region: '',      //华东,华北,国际, 默认华东
+        appId: 'JGgDdQUBQxmTAG0CNutrnKDN-MdYXbMMI',       //应用ID, 必输
+        appKey: 'kwk7Vp6LjYMIpYtMncPm2UfW',      //应用Key, 必输
+        region: '国际',      //华东,华北,国际, 默认华东
         domain: '',      //自定义域名
         site_uv: 0,      //初始UV
         site_pv: 0,      //初始PV
