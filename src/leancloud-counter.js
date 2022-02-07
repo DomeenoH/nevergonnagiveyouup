@@ -265,18 +265,18 @@ function VisitorCounter() {
         if (this.config.region != "") {
             switch (this.config.region) {
                 case '华东':
-                    this.config.baseUrl = 'https://' + this.config.appId.substring(0, 8) + '.api.lncld.net'
+                    this.config.baseUrl = 'https://' + this.config.appId.substring(0, 8) + '.api.lncldglobal.com'
                     break;
                 case '华北':
-                    this.config.baseUrl = 'https://' + this.config.appId.substring(0, 8) + '.api.lncld.net'
+                    this.config.baseUrl = 'https://' + this.config.appId.substring(0, 8) + '.api.lncldglobal.com'
                     break;
                 case '国际':
-                    this.config.baseUrl = 'https://' + this.config.appId.substring(0, 8) + '.api.lncld.net'
+                    this.config.baseUrl = 'https://' + this.config.appId.substring(0, 8) + '.api.lncldglobal.com'
                     break;
             }
         }
 
-        this.config.baseUrl = 'https://' + this.config.appId.substring(0, 8) + '.api.lncld.net'
+        this.config.baseUrl = 'https://' + this.config.appId.substring(0, 8) + '.api.lncldglobal.com'
     };
 
     /**  
