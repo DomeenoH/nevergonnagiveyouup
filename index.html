@@ -9,10 +9,10 @@
 <head>
 	<title>多米诺的色图站</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-SBE3W6QYTW"></script>
+	<!-- 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SBE3W6QYTW"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() { dataLayer.push(arguments); }
@@ -29,7 +29,7 @@
 				s.parentNode.insertBefore(hm, s);
 			})();
 		</script>
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 </head>
 
 <body class="is-preload">
@@ -41,59 +41,67 @@
 			<p><span id="busuanzi_container_site_pv">有<span id="busuanzi_value_site_pv"></span>位绅士来过这里</span></p><br>
 		</header>
 		<div class="container">
-			<ul class="actions special">
-				<li><a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"
-						class="button primary scrolly">点击显示一张色图</a></li>
-				<li><a href="https://b.dominoh.com"
-						class="button primary scrolly">站长的B站主页</a></li>
-			</ul>
+			<a href="#go" class="button primary scrolly">冲！</a>
 		</div>
 	</section>
-	<!-- Footer -->
-	<section id="footer">
+	<section id="go" class="main">
 		<div class="container">
-			<header class="major">
-				<h2>来都来了，留个言再走嘛:D</h2>
-			</header>
-			<!-- lightGallery -->
-			<link rel="stylesheet" href="https://unpkg.com/lightgallery@2.1.8/css/lightgallery.css">
-			<script src="https://unpkg.com/lightgallery@2.1.8/lightgallery.min.js"></script>
-			<div id="tcomment"></div>
-			<script src="https://unpkg.com/twikoo@1.4.14/dist/twikoo.all.min.js"></script>
-			<script>
-				twikoo.init({
-					envId: 'https://twikoo.dominoh.com',
-					el: '#tcomment',
-					// region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
-					// path: 'window.location.pathname', // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
-					// lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/dev/src/js/utils/i18n/index.js
-					onCommentLoaded: function () {
-						var commentContents = document.getElementsByClassName('tk-content');
-						for (var i = 0; i < commentContents.length; i++) {
-							var commentItem = commentContents[i];
-							var imgEls = commentItem.getElementsByTagName('img');
-							if (imgEls.length > 0) {
-								for (var j = 0; j < imgEls.length; j++) {
-									var imgEl = imgEls[j];
-									var aEl = document.createElement('a');
-									aEl.setAttribute('class', 'tk-lg-link');
-									aEl.setAttribute('href', imgEl.getAttribute('src'));
-									aEl.setAttribute('data-src', imgEl.getAttribute('src'));
-									aEl.appendChild(imgEl.cloneNode(false));
-									imgEl.parentNode.insertBefore(aEl, imgEl.nextSibling);
-									imgEl.remove();
+			<div class="content">
+				<header class="major">
+					<h2>多米诺的色图站</h2>
+				</header>
+				<section>
+					<ul class="actions special">
+						<li><a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"
+								class="button primary">点击显示一张色图</a></li><br>
+						<li><a href="https://b.dominoh.com" class="button bili">站长的B站主页</a></li>
+					</ul>
+				</section>
+				<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<header class="major">
+							<h2>来都来了，留个言再走嘛:D</h2>
+						</header>
+						<!-- lightGallery -->
+						<link rel="stylesheet" href="https://unpkg.com/lightgallery@2.1.8/css/lightgallery.css">
+						<script src="https://unpkg.com/lightgallery@2.1.8/lightgallery.min.js"></script>
+						<div id="tcomment"></div>
+						<script src="https://unpkg.com/twikoo@1.4.14/dist/twikoo.all.min.js"></script>
+						<script>
+							twikoo.init({
+								envId: 'https://twikoo.dominoh.com',
+								el: '#tcomment',
+								// region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
+								// path: 'window.location.pathname', // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+								// lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/dev/src/js/utils/i18n/index.js
+								onCommentLoaded: function () {
+									var commentContents = document.getElementsByClassName('tk-content');
+									for (var i = 0; i < commentContents.length; i++) {
+										var commentItem = commentContents[i];
+										var imgEls = commentItem.getElementsByTagName('img');
+										if (imgEls.length > 0) {
+											for (var j = 0; j < imgEls.length; j++) {
+												var imgEl = imgEls[j];
+												var aEl = document.createElement('a');
+												aEl.setAttribute('class', 'tk-lg-link');
+												aEl.setAttribute('href', imgEl.getAttribute('src'));
+												aEl.setAttribute('data-src', imgEl.getAttribute('src'));
+												aEl.appendChild(imgEl.cloneNode(false));
+												imgEl.parentNode.insertBefore(aEl, imgEl.nextSibling);
+												imgEl.remove();
+											}
+											lightGallery(commentItem, {
+												selector: '.tk-lg-link',
+												share: false
+											});
+										}
+									}
 								}
-								lightGallery(commentItem, {
-									selector: '.tk-lg-link',
-									share: false
-								});
-							}
-						}
-					}
-				})
-			</script>
-			<footer>
-				<!-- 					<ul class="icons">
+							})
+						</script>
+						<footer>
+							<!-- 					<ul class="icons">
 						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
@@ -103,17 +111,17 @@
 					<ul class="copyright">
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
 					</ul> -->
-			</footer>
-	</section>
+						</footer>
+				</section>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+				<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.scrollex.min.js"></script>
+				<script src="assets/js/jquery.scrolly.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
 
 </body>
 
