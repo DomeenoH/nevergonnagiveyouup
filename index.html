@@ -7,6 +7,7 @@
 <html>
 
 <head>
+	<script src="https://unpkg.com/discuss@0.2.3/dist/Discuss.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SBE3W6QYTW"></script>
 	<script>
@@ -68,7 +69,15 @@
 				<br />
 				点击按钮打开新世界的大门
 			</p>
-
+			<div id="Discuss-Comments"></div>
+			<script>
+			  // 初始化
+			  Discuss.init({
+				el: "#Discuss-Comments",
+				serverURLs: "https://discuss-ten.vercel.app/",
+				ph:"来都来了，留个言？",
+			  });
+			</script>
 			<footer>
 				<ul class="buttons stacked">
 					<li><a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"
