@@ -1252,7 +1252,7 @@ input, select, textarea {
 		min-height: 100vh;
 		padding: 0 0 12em 0;
 		position: relative;
-		text-align: center;
+		text-align: left;
 	}
 
 		#footer .container {
@@ -1266,7 +1266,7 @@ input, select, textarea {
 			color: rgba(255, 255, 255, 0.5);
 			left: 0;
 			position: absolute;
-			text-align: center;
+			text-align: left;
 			width: 100%;
 		}
 
